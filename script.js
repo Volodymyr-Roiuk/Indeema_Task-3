@@ -1,3 +1,10 @@
+//You can edit row in table on mouse double click.
+// If you want save changes you must press Enter key. If you don't want save changes you must press Escape key.
+
+// Also you can select a lot of rows and delete all selected rows.
+
+
+
 class peopleTable {
   constructor() {
     this.people = [];
@@ -39,7 +46,6 @@ class peopleTable {
     Surname.className = 'column';
     Email.className = 'column';
     Date.className = 'column';
-
 
     row.addEventListener('click', (event) => this.rowClick(event, id));
     row.addEventListener('dblclick', (event) => this.rowDbClick(event, id));
